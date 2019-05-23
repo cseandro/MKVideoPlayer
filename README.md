@@ -44,6 +44,7 @@ dependencies {
 	}
 ```
 # How to use 
+
 ## case 1: only want to play a video fullscreen
 just call`MKPlayerActivity.configPlayer(activity).play(url)`.
 <!---MK video player--->
@@ -64,6 +65,16 @@ just call`MKPlayerActivity.configPlayer(activity).play(url)`.
  MKPlayer mkplayer = new  MKPlayer(Activity);
 mkplayer.play(url);
 ```
+
+
+# For https links Use(only MP4 support)
+``` java
+ 
+ MKPlayer mkplayer = new MKPlayer(this);
+        Uri url =  Uri.parse("Your_Video_Url");
+        mkplayer.play(String.valueOf(url));
+```
+
 ### step 3: How to handle setPlayerCallBacks
 <!---MK video player--->
 ``` java
